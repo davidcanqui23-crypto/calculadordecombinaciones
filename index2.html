@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Combinaciones Complejas</title>
+    <link rel="stylesheet" href="css/estilos2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Ejercicio 2: Calculador de Combinaciones Complejas (Caso Sorteo)</h2>
+        <p class="description">
+            Calcula el total de combinaciones posibles para un sorteo de selección simultánea en dos grupos independientes.
+        </p>
+
+        <div class="form-container">
+            <div class="group-box">
+                <h3>Grupo 1 (Combinaciones 1)</h3>
+                <div class="input-field">
+                    <label for="n1">Elementos Totales (n1):</label>
+                    <input type="number" id="n1" value="59">
+                </div>
+                <div class="input-field">
+                    <label for="r1">Elementos Seleccionados (r1):</label>
+                    <input type="number" id="r1" value="5">
+                </div>
+            </div>
+
+            <div class="group-box">
+                <h3>Grupo 2 (Combinaciones 2)</h3>
+                <div class="input-field">
+                    <label for="n2">Elementos Totales (n2):</label>
+                    <input type="number" id="n2" value="35">
+                </div>
+                <div class="input-field">
+                    <label for="r2">Elementos Seleccionados (r2):</label>
+                    <input type="number" id="r2" value="1">
+                </div>
+            </div>
+        </div>
+
+        <button id="btnCalcular">Calcular Combinaciones</button>
+
+        <div class="result-box" id="resultBox">
+            <h3>Resultado del Sorteo</h3>
+            <p>Combinaciones Grupo 1: <strong id="resGrupo1">0</strong></p>
+            <p>Combinaciones Grupo 2: <strong id="resGrupo2">0</strong></p>
+            <hr>
+            <p class="total">Total Combinaciones: <span id="resTotal">0</span></p>
+        </div>
+    </div>
+
+    <script href="js/ej2.js" src="js/ej2.js"></script>
+</body>
+</html>
